@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Добро пожаловать в Седону</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-heder">
+    <div class="page-header-top">
+      <nav class="main-nav">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#" class="navigation-link" title="Информация">Информация</a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео">Фото и видео</a></li>
+          <li class="navigation-item navigation-logo"><a href="#" class="nav-logo" title="Логотип">
+              <img class="logo-top" src="logo.svg" alt="logo" width="140" height="50"></a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link" title="Карта штата">Карта штата</a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link" title="Гостиницы">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-header-bottom">
+      <div class="text-welcom">
+        <img class="inscription-welcom" src="welcom.img" alt="welcom" width="140" height="50">
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="hidden">...</h1>
+    <section class="slogan">
+      <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
+    <section class="desk">
+      <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+      <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <div class="form">
+        <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <div class="search-card">
+          <form class="search card">
+            <div class="arrival-date">
+              <label for="arriv-date">
+                Дата заезда
+              </label>
+              <input type="text" id="arriv-date" />
+            </div>
+            <div class="arrival-dep">
+              <label for="arriv-dep">
+                Дата выезда
+              </label>
+              <input type="text" id="arriv-dep" />
+            </div>
+            <div class="lodgers">
+              <div class="adults">
+                <label for="adul">
+                  Взрослые
+                </label>
+                <input type="text" id="adul" />
+              </div>
+              <div class="children">
+                <label for="child">
+                  Дети
+                </label>
+                <input type="text" id="child" />
+              </div>
+              <button type="submit" class="search">
+                НАЙТИ
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <p class="footer-logo">
+      <a href="#" title="#VISITSEDONA">#VISITSEDONA"</a>
+    </p>
+    <div class="social-networks">
+      <ul class="social">
+        <li class="social-item"><a class="social-link" href="#"><img src="icon-tw.png" alt="Twiter" width="" height="" /></a></li>
+        <li class="social-item"><a class="social-link" href="#"><img src="icon-fb.png" alt="Facebook" width="" height="" /></a></li>
+        <li class="social-item"><a class="social-link" href="#"><img src="icon-you.png" alt="YouTube" width="" height="" /></a></li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p class="copyright">
+        Website by</p>
+      <a class="logo-htmlacademy" href="#">
+        <img class="logo-htmlacademy" src="logo-htmlacademy.img" alt="HTMLAcademy" width="140" height="50">
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
