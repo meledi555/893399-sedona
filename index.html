@@ -10,115 +10,183 @@
 </head>
 
 <body>
-  <header class="container main-heder">
-    <div class="page-header-top">
-      <nav class="main-nav">
-        <ul class="navigation-list navigation-list-left">
-          <li class="navigation-item"><a href="google.ru" class="navigation-link" title="Информация" tabindex="1">Информация</a></li>
-          <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео">Фото и видео</a></li>
-        </ul>
-
-        <div class=" container navigation-logo">
-          <a href="#" class="nav-logo" title="Логотип">
-            <img class="logo-top" src="img/logo.png" alt="logo" width="140" height="72">
-          </a>
-        </div>
-
-        <ul class="navigation-list navigation-list-right">
-          <li class="navigation-item"><a href="#" class="navigation-link" title="Карта штата">Карта штата</a></li>
-          <li class="navigation-item"><a href="#" class="navigation-link" title="Гостиницы">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class=" container page-header-bottom">
-      <div class="text-welcom">
-        <img class="inscription-welcom" src="img/welcome-label.png" alt="welcom" width="250" height="250">
-      </div>
-    </div>
-  </header>
   <main class="container">
+    <!-- Header start -->
+    <header class=" main-heder">
+      <div class="page-header-top">
+        <nav class="main-nav">
+          <ul class="navigation-list navigation-list-left">
+            <li class="navigation-item"><a href="google.ru" class="navigation-link" title="Информация" tabindex="1">Информация</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео">Фото и видео</a></li>
+          </ul>
+
+          <div class="  navigation-logo">
+            <a href="#" class="nav-logo" title="Логотип">
+              <img class="logo-top" src="img/logo.png" alt="logo" width="140" height="72">
+            </a>
+          </div>
+
+          <ul class="navigation-list navigation-list-right">
+            <li class="navigation-item"><a href="#" class="navigation-link" title="Карта штата">Карта штата</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link" title="Гостиницы">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="  page-header-bottom">
+        <div class="text-welcom">
+          <img class="inscription-welcom" src="img/welcome-label.png" alt="welcom" width="250" height="250">
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
     <h1 class="hidden">...</h1>
+
+    <!-- Slogan start -->
     <section class="slogan">
       <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
+    <!-- Slogan end -->
+
+    <!-- Reasons start -->
+    <section class="reason-city">
+      <div class="reasons-item">
+        <h3>Настоящий<br />городок</h3>
+        <p>- №1 -</p>
+        <p>Седона — не аттракцион для туристов,<br />там течёт своя жизнь</p>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <div class="reasons-item">
+        <img />
+        <h3>Жильё</h3>
+        <p>Рекомендуем пожить в настоящем мотеле,<br />всё как в кино!</p>
+      </div>
+      <div class="reasons-item">
+        <img />
+        <h3>Еда</h3>
+        <p>Всегда заказывайте фирменный бургер,<br />вы не разочаруетесь!</p>
+      </div>
+      <div class="reasons-item">
+        <img />
+        <h3>Сувениры</h3>
+        <p>Не только китайского, но и местного<br />производства!</p>
+      </div>
+    </section>
+
+    <section class="reason-bridge">
+      <div class="reasons-item">
+        <h3>Там есть<br />Мост дьявола</h3>
+        <p>— №2 —</p>
+        <p>Да, по нему можно пройти! Если конечно<br />вы осмелитесь</p>
+      </div>
+    </section>
+
+    <section class="reasons-two">
+      <div class="reasons-item">
+        <h3>Небольшая<br />площадь</h3>
+        <p>— №3 —</p>
+        <p>Все достопримечательности<br />находятся очень близко</p>
+      </div>
+      <div class="reasons-item">
+        <h3>Красивая<br />дорога</h3>
+        <p>— №4 —</p>
+        <p>Ехать в Седону из Лас-Вегаса совсем<br /> не скучно!</p>
+      </div>
+      <div class="reasons-item">
+        <h3>Мало<br />туристов</h3>
+        <p>— №5 —</p>
+        <p>Большинство едет в гранд каньон<br /> и толпится там</p>
+      </div>
+    </section>
+    <!-- Reasons end -->
+
+    <!-- Desk start -->
     <section class="desk">
       <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-      <form class="search-card">
-        <div class="arrival-date">
-          <label for="arriv-date">
-            Дата заезда
-          </label>
-          <div class="field-date arriv-date">
-            <input type="text" id="arriv-date" value="27 апреля 2017" />
-            <a class="input-control calendar" href="#">
-              <img src="img/calendar.png" alt="calendar" width="21" height="22" />
-            </a>
-          </div>
-        </div>
-
-        <div class="arrival-dep">
-          <label for="arriv-dep">
-            Дата выезда
-          </label>
-          <div class="field-date arriv-dep">
-            <input type="text" id="arriv-dep" value="7 июня 2017" />
-            <a class="input-control calendar" href="#">
-              <img src="img/calendar.png" alt="calendar" width="21" height="22" />
-            </a>
-          </div>
-        </div>
-        <div class="lodgers">
-          <div class="adults">
-            <label for="adul">
-              Взрослые
+      <div class="search-wrapper">
+        <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <form class="search-card">
+          <div class="form-line arrival-date">
+            <label for="arriv-date">
+              Дата заезда
             </label>
-            <div class="field">
-              <button type="button" class="input-control minus">-</button><input type="text" value="0" id="adul" /><button
-                type="button" class="input-control plus">+</button>
+            <div class="field-date arriv-date">
+              <input type="text" id="arriv-date" value="27 апреля 2017" />
+              <a class="input-control calendar" href="#">
+                <img src="img/calendar.png" alt="calendar" width="21" height="22" />
+              </a>
             </div>
           </div>
-          <div class="children">
-            <label for="child">
-              Дети
+          <div class="form-line arrival-dep">
+            <label for="arriv-dep">
+              Дата выезда
             </label>
-
-            <div class="field">
-              <button type="button" class="input-control minus">-</button><input type="text" value="0" id="child" /><button
-                type="button" class="input-control plus">+</button>
+            <div class="field-date arriv-dep">
+              <input type="text" id="arriv-dep" value="7 июня 2017" />
+              <a class="input-control calendar" href="#">
+                <img src="img/calendar.png" alt="calendar" width="21" height="22" />
+              </a>
+            </div>
+          </div>
+          <div class="form-line lodgers">
+            <div class="adults">
+              <label for="adul">
+                Взрослые
+              </label>
+              <div class="field">
+                <button type="button" class="input-control minus">-</button><input type="text" value="0" id="adul" /><button
+                  type="button" class="input-control plus">+</button>
+              </div>
+            </div>
+            <div class="children">
+              <label for="child">
+                Дети
+              </label>
+              <div class="field">
+                <button type="button" class="input-control minus">-</button><input type="text" value="0" id="child" /><button
+                  type="button" class="input-control plus">+</button>
+              </div>
             </div>
           </div>
           <button class="search-button" type="submit" class="search">
-            НАЙТИ
-          </button>
-        </div>
-      </form>
+              НАЙТИ
+            </button>
+        </form>
+      </div>
     </section>
+    <!-- Desk End -->
+
+    <!-- Map start -->
+    <section class="map"></section>
+    <!-- Map end -->
+
+    <!-- Footer start -->
+    <footer class="main-footer">
+      <p class="footer-logo">
+        <a href="#" title="#VISITSEDONA">#VISITSEDONA"</a>
+      </p>
+      <div class="social-networks">
+        <ul class="social">
+          <li class="social-item"><a class="social-link" href="#"><img src="img/twiter-icon.png" alt="Twiter" width="17"
+                height="15" /></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/fb-icon.png" alt="Facebook" width="12"
+                height="22" /></a></li>
+          <li class="social-item"><a class="social-link" href="#"><img src="img/youtube-icon.png" alt="YouTube" width="20"
+                height="16" /></a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <p class="copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" alt="HTMLAcademy" class="logo-htmlacademy"
+            href="#"></a></p>
+      </div>
+    </footer>
+    <!-- Footer end -->
   </main>
-  <footer class=" container main-footer">
-    <p class="footer-logo">
-      <a class="visitsed" href="#" title="#VISITSEDONA">#VISITSEDONA"</a>
-    </p>
-    <div class="social-networks">
-      <ul class="social">
-        <li class="social-item"><a class="social-link" href="#"><img src="img/twiter-icon.png" alt="Twiter" width="17"
-              height="15" /></a></li>
-        <li class="social-item"><a class="social-link" href="#"><img src="img/fb-icon.png" alt="Facebook" width="12"
-              height="22" /></a></li>
-        <li class="social-item"><a class="social-link" href="#"><img src="img/youtube-icon.png" alt="YouTube" width="20"
-              height="16" /></a></li>
-      </ul>
-    </div>
-    <div class="footer-copyright">
-      <p class="copyright">
-        Website by</p>
-      <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img class="logo-htmlacademy" alt="HTMLAcademy" width="115" height="41">
-      </a>
-    </div>
-  </footer>
+
 </body>
 
 </html>

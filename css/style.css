@@ -4,14 +4,25 @@ body {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: bold;
+/*  font-weight: bold;*/
   color: #000000;
   text-transform: uppercase;
-
-  background-color: #ffffff;
+  background-color: #f0f0f0;
 }
 
-.container{
+.hidden{
+  display: none;
+}
+
+main {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.container {
   width: 1200px;
   margin: 0px auto;
 }
@@ -19,139 +30,123 @@ body {
 a {
   text-decoration: none;
   color: #000000;
-
 }
-.main-heder{
+
+.main-heder {
   font-size: 14px;
   line-height: 26px;
   background-color: #ffffff;
 }
 
-.page-header-bottom
-{
+.navigation-list {
+  font-weight: bold;
+}
+
+.page-header-bottom {
   background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  border:none;
+  border: none;
 }
 
-.text-welcom
-{
+.text-welcom {
   background-image: url("../img/polygon.png");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size:contain;
-  border:none;
+  background-size: contain;
+  border: none;
   text-align: center;
 }
 
 .text-welcom img {
-  padding:100px;
-  width:459px;
-  height:353px;
+  padding: 100px;
+  width: 459px;
+  height: 353px;
 }
 
-h2
-{
+h2 {
   font-size: 21px;
 }
-.slogan h2
-{
- line-height: 26px;
-}
-.slogan p
-{
-  font-size: 14px;
-  line-height: 26px;
-  background-color: #ffffff;
-  font-weight: normal;
-}
-.desk h2
-{
+
+
+.desk h2 {
   font-size: 30px;
   line-height: 36px;
 }
-.desk p
-{
+
+.desk p {
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
 }
 
-.desk .search
-{
+.desk .search {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  background-color:#766357
+  background-color: #766357
 }
-.search-card
-{
+
+.search-card {
   font-size: 14px;
   line-height: 26px;
 }
 
-.search-button
-{
+.search-button {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  background-color:#81b3d2
+  background-color: #81b3d2
 }
-.social-networks ul
-{
-list-style: none;
+
+.social-networks ul {
+  list-style: none;
 }
-.visitsed .copyright
-{
+
+.visitsed .copyright {
   font-size: 21px;
   line-height: 26px;
 }
 
-.search:hover{
+.search:hover {
   background-color: #604e43
 }
+
 .search:active {
   background-color: #503e33;
   color: #928a85
 }
 
-
-
-input[type=text]{
-  color:#000;
+input[type=text] {
+  color: #000;
   text-transform: uppercase;
   font-weight: 700;
-
   border: none;
-
   background-color: #f2f2f2;
 }
 
-input[type=text]:hover{
+input[type=text]:hover {
   background-color: #ebebeb
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
   background-color: #ffffff
 }
 
-
-.input-control{
-  margin:0px;
+.input-control {
+  margin: 0px;
   border: none;
-  color:#a9a9a9
-}
-.input-control:hover{
-  color:#000000
-}
-.input-control:active{
-  color:#81b3d2
+  color: #a9a9a9
 }
 
+.input-control:hover {
+  color: #000000
+}
 
-/* Поля формы */
+.input-control:active {
+  color: #81b3d2
+}
 
 /* Поля с датой */
 .field-date {
@@ -160,113 +155,302 @@ input[type=text]:focus{
   height: 36px;
 }
 
-.field-date input{
+.field-date input {
   padding: 0px 15px;
   line-height: 36px;
   height: 36px;
 }
+
 .field-date a {
   border: none;
-  border-width: 0px;;
+  border-width: 0px;
+  ;
 }
 
-.field-date .calendar{
+.field-date .calendar {
   position: absolute;
   top: 5px;
   right: 5px;
 }
 
 /* Поля c цифрами */
-.field{
-  padding:0px;
+.field {
+  padding: 0px;
   display: inline-block;
 }
 
 .field input,
-.field button{
+.field button {
   padding: 0px 15px;
   height: 36px;
-  border:none;
+  border: none;
   border-width: 0px;
   background-color: #f2f2f2;
 }
 
-.search-button{
- background-color: #81b3d2
- color:#ffffff
+.search-button {
+  background-color: #81b3d2 color:#ffffff
 }
-.search-button:hover{
-  background-color:#669ec0
+
+.search-button:hover {
+  background-color: #669ec0
 }
-.search-button:active{
-  background-color:#5496bd
+
+.search-button:active {
+  background-color: #5496bd
 }
 
 
-.social-item{
-  display: inline-block;
-  vertical-align: middle;
+
+.more {
   background-color: #81b3d2
 }
-.social-item:hover{
+
+.more:hover {
   background-color: #669ec0
 }
-.social-item:active{
+
+.more:active {
   background-color: #5496bd
 }
 
-.social-link{
-  padding: 0px 10px;
-  vertical-align: middle;
-  display: inline-block;
+.armor {
+  background-color: #766357
 }
 
-.more{
-  background-color:#81b3d2
-}
-.more:hover{
-  background-color: #669ec0
-}
-.more:active{
-  background-color: #5496bd
-}
-
-
-.armor{
-  background-color:#766357
-}
-.armor:hover{
+.armor:hover {
   background-color: #604e43
 }
-.armor:active{
+
+.armor:active {
   background-color: #503e33;
   color: #928a85
 }
 
-
-.hotel-title{
-color: #000000
-}
-.hotel-title:hover{
-color: #81b3d2
-}
-.hotel-title:active{
-color: #cacaca
+.hotel-title {
+  color: #000000
 }
 
-.copyright{
+.hotel-title:hover {
+  color: #81b3d2
 }
-.logo-htmlacademy{
- vertical-align: middle;
- background: url(../img/htmlacad-logo.png);
- display: inline-block;
- width:115px;
- height:41px;
- margin-left: 3px;
+
+.hotel-title:active {
+  color: #cacaca
 }
-.logo-htmlacademy:hover{
- background: url(../img/htmlacad-logo-blue.png);
+
+.logo-htmlacademy {
+  vertical-align: middle;
+  background: url(../img/htmlacad-logo.png);
+  display: inline-block;
+  width: 115px;
+  height: 41px;
+  margin-left: 3px;
 }
-.logo-htmlacademy:active{
+
+.logo-htmlacademy:hover {
+  background: url(../img/htmlacad-logo-blue.png);
+}
+
+.logo-htmlacademy:active {
   background: url(../img/htmlacad-logo-grey.png);
 }
+
+/* Base */
+
+/* Common */
+
+/* Header */
+
+.main-nav{
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+.main-nav ul{
+  margin: 0px;
+  padding: 0px;
+}
+.main-nav ul li{
+ list-style: none;
+ display: inline-block;
+ padding-top: 20px;
+}
+
+.main-nav ul li a {
+  padding-top:20px;
+}
+
+.navigation-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Logo */
+
+/* Slogan */
+.slogan {
+  text-align: center;
+}
+.slogan h2 {
+  line-height: 26px;
+}
+
+.slogan p {
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
+/* Reasons */
+
+.reasons-item {
+  width: 400px;
+}
+
+.reason-city {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+
+  background-image: url(../img/house.jpg);
+  background-position: bottom right;
+}
+
+.reason-city .reasons-item {
+  background-color: #81b3d2;
+  color: #FFF;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.reason-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+
+  background-image: url(../img/mountain.jpg);
+  background-position: bottom left;
+}
+
+.reason-bridge .reasons-item {
+  background-color: #81b3d2;
+  color: #FFF;
+}
+
+.reasons-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #eee;
+}
+
+
+/* Desk */
+
+.desk > h2{
+  text-align: center;
+}
+.desk > p{
+  text-align: center;
+}
+
+.search-wrapper{
+  position: relative;
+  width: 566px;
+  margin:0px auto;
+}
+
+.search {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.search-wrapper .search-card{
+ position: absolute;
+ top:90px;
+ left:0px;
+ background-color: #FFF;
+ padding: 55px;
+ width: 456px;
+}
+
+.form-line{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+
+.search-button{
+  width: 100%;
+  border: 0px;
+}
+
+/* Map */
+
+.map{
+  height: 473px;
+  width: 100%;
+
+  background: url(../img/map.jpg);
+}
+
+
+/* Hotels */
+
+.hotels-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-item{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+/* Footer */
+
+.main-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-item {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #81b3d2
+}
+
+.social-item:hover {
+  background-color: #669ec0
+}
+
+.social-item:active {
+  background-color: #5496bd
+}
+
+.social-link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
