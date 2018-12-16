@@ -4,36 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>Добро пожаловать в Седону</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-heder">
+  <header class="container main-heder">
     <div class="page-header-top">
       <nav class="main-nav">
         <ul class="navigation-list navigation-list-left">
           <li class="navigation-item"><a href="google.ru" class="navigation-link" title="Информация" tabindex="1">Информация</a></li>
-          <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео" >Фото и видео</a></li>
-          </ul>
+          <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео">Фото и видео</a></li>
+        </ul>
 
-          <div class="navigation-logo">
-            <a href="#" class="nav-logo" title="Логотип">
-              <img class="logo-top" src="img/logo.png" alt="logo" width="140" height="72">
-            </a>
-          </div>
+        <div class=" container navigation-logo">
+          <a href="#" class="nav-logo" title="Логотип">
+            <img class="logo-top" src="img/logo.png" alt="logo" width="140" height="72">
+          </a>
+        </div>
 
-          <ul class="navigation-list navigation-list-right">
+        <ul class="navigation-list navigation-list-right">
           <li class="navigation-item"><a href="#" class="navigation-link" title="Карта штата">Карта штата</a></li>
           <li class="navigation-item"><a href="#" class="navigation-link" title="Гостиницы">Гостиницы</a></li>
         </ul>
       </nav>
     </div>
-    <div class="page-header-bottom">
+    <div class=" container page-header-bottom">
       <div class="text-welcom">
-        <img class="inscription-welcom" src="img/welcome-label.png" alt="welcom" width="140" height="50">
+        <img class="inscription-welcom" src="img/welcome-label.png" alt="welcom" width="250" height="250">
       </div>
     </div>
   </header>
-  <main>
+  <main class="container">
     <h1 class="hidden">...</h1>
     <section class="slogan">
       <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
@@ -42,66 +45,77 @@
     <section class="desk">
       <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-          <form class="search card">
-            <div class="arrival-date">
-              <label for="arriv-date">
-                Дата заезда
-              </label>
-              <div class="arriv-date">
-              <input type="text" id="arriv-date" />
-              <a class="calendar" href="#"><img src="img/calendar.png" alt="calendar" width="21" height="22"/></a>
+      <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <form class="search-card">
+        <div class="arrival-date">
+          <label for="arriv-date">
+            Дата заезда
+          </label>
+          <div class="field-date arriv-date">
+            <input type="text" id="arriv-date" value="27 апреля 2017" />
+            <a class="input-control calendar" href="#">
+              <img src="img/calendar.png" alt="calendar" width="21" height="22" />
+            </a>
+          </div>
+        </div>
+
+        <div class="arrival-dep">
+          <label for="arriv-dep">
+            Дата выезда
+          </label>
+          <div class="field-date arriv-dep">
+            <input type="text" id="arriv-dep" value="7 июня 2017" />
+            <a class="input-control calendar" href="#">
+              <img src="img/calendar.png" alt="calendar" width="21" height="22" />
+            </a>
+          </div>
+        </div>
+        <div class="lodgers">
+          <div class="adults">
+            <label for="adul">
+              Взрослые
+            </label>
+            <div class="field">
+              <button type="button" class="input-control minus">-</button><input type="text" value="0" id="adul" /><button
+                type="button" class="input-control plus">+</button>
             </div>
+          </div>
+          <div class="children">
+            <label for="child">
+              Дети
+            </label>
+
+            <div class="field">
+              <button type="button" class="input-control minus">-</button><input type="text" value="0" id="child" /><button
+                type="button" class="input-control plus">+</button>
             </div>
-            <div class="arrival-dep">
-              <label for="arriv-dep">
-                Дата выезда
-              </label>
-              <div class="arriv-dep">
-              <input type="text" id="arriv-dep" />
-              <a class="calendar" href="#"><img src="img/calendar.png" alt="calendar" width="21" height="22"/></a>
-            </div>
-           </div>
-            <div class="lodgers">
-              <div class="adults">
-                <label for="adul">
-                  Взрослые
-                </label>
-                <button class="minus">-</button>
-                <input type="text" id="adul"/>
-                <button class="plus">+</button>
-              </div>
-              <div class="children">
-                <label for="child">
-                  Дети
-                </label>
-                <button class="minus">-</button>
-                <input type="text" id="child"/>
-                <button class="plus">+</button>
-              </div>
-              <button type="submit" class="search">
-                НАЙТИ
-              </button>
-            </div>
-          </form>
+          </div>
+          <button class="search-button" type="submit" class="search">
+            НАЙТИ
+          </button>
+        </div>
+      </form>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class=" container main-footer">
     <p class="footer-logo">
-      <a href="#" title="#VISITSEDONA">#VISITSEDONA"</a>
+      <a class="visitsed" href="#" title="#VISITSEDONA">#VISITSEDONA"</a>
     </p>
     <div class="social-networks">
       <ul class="social">
-        <li class="social-item"><a class="social-link" href="#"><img src="img/twiter-icon.png" alt="Twiter" width="17" height="15" /></a></li>
-        <li class="social-item"><a class="social-link" href="#"><img src="img/fb-icon.png" alt="Facebook" width="12" height="22" /></a></li>
-        <li class="social-item"><a class="social-link" href="#"><img src="img/youtube-icon.png" alt="YouTube" width="20" height="16" /></a></li>
+        <li class="social-item"><a class="social-link" href="#"><img src="img/twiter-icon.png" alt="Twiter" width="17"
+              height="15" /></a></li>
+        <li class="social-item"><a class="social-link" href="#"><img src="img/fb-icon.png" alt="Facebook" width="12"
+              height="22" /></a></li>
+        <li class="social-item"><a class="social-link" href="#"><img src="img/youtube-icon.png" alt="YouTube" width="20"
+              height="16" /></a></li>
       </ul>
     </div>
     <div class="footer-copyright">
       <p class="copyright">
         Website by</p>
-      <a class="logo-htmlacademy" href="#">
-        <img class="logo-htmlacademy" src="img/logo_html.png" alt="HTMLAcademy" width="115" height="41">
+      <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="logo-htmlacademy" alt="HTMLAcademy" width="115" height="41">
       </a>
     </div>
   </footer>

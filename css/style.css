@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.container{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+}
+.main-heder{
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+.page-header-bottom
+{
+  background-color: #ffffff;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  border:none;
+}
+
+.text-welcom
+{
+  background-image: url("../img/polygon.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  border:none;
+  text-align: center;
+}
+
+.text-welcom img {
+  padding:100px;
+  width:459px;
+  height:353px;
+}
+
+h2
+{
+  font-size: 21px;
+}
+.slogan h2
+{
+ line-height: 26px;
+}
+.slogan p
+{
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+.desk h2
+{
+  font-size: 30px;
+  line-height: 36px;
+}
+.desk p
+{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.desk .search
+{
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color:#766357
+}
+.search-card
+{
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.search-button
+{
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color:#81b3d2
+}
+.social-networks ul
+{
+list-style: none;
+}
+.visitsed .copyright
+{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search:hover{
+  background-color: #604e43
+}
+.search:active {
+  background-color: #503e33;
+  color: #928a85
+}
+
+
+
+input[type=text]{
+  color:#000;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  border: none;
+
+  background-color: #f2f2f2;
+}
+
+input[type=text]:hover{
+  background-color: #ebebeb
+}
+
+input[type=text]:focus{
+  background-color: #ffffff
+}
+
+
+.input-control{
+  margin:0px;
+  border: none;
+  color:#a9a9a9
+}
+.input-control:hover{
+  color:#000000
+}
+.input-control:active{
+  color:#81b3d2
+}
+
+
+/* Поля формы */
+
+/* Поля с датой */
+.field-date {
+  position: relative;
+  display: inline-block;
+  height: 36px;
+}
+
+.field-date input{
+  padding: 0px 15px;
+  line-height: 36px;
+  height: 36px;
+}
+.field-date a {
+  border: none;
+  border-width: 0px;;
+}
+
+.field-date .calendar{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* Поля c цифрами */
+.field{
+  padding:0px;
+  display: inline-block;
+}
+
+.field input,
+.field button{
+  padding: 0px 15px;
+  height: 36px;
+  border:none;
+  border-width: 0px;
+  background-color: #f2f2f2;
+}
+
+.search-button{
+ background-color: #81b3d2
+ color:#ffffff
+}
+.search-button:hover{
+  background-color:#669ec0
+}
+.search-button:active{
+  background-color:#5496bd
+}
+
+
+.social-item{
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #81b3d2
+}
+.social-item:hover{
+  background-color: #669ec0
+}
+.social-item:active{
+  background-color: #5496bd
+}
+
+.social-link{
+  padding: 0px 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.more{
+  background-color:#81b3d2
+}
+.more:hover{
+  background-color: #669ec0
+}
+.more:active{
+  background-color: #5496bd
+}
+
+
+.armor{
+  background-color:#766357
+}
+.armor:hover{
+  background-color: #604e43
+}
+.armor:active{
+  background-color: #503e33;
+  color: #928a85
+}
+
+
+.hotel-title{
+color: #000000
+}
+.hotel-title:hover{
+color: #81b3d2
+}
+.hotel-title:active{
+color: #cacaca
+}
+
+.copyright{
+}
+.logo-htmlacademy{
+ vertical-align: middle;
+ background: url(../img/htmlacad-logo.png);
+ display: inline-block;
+ width:115px;
+ height:41px;
+ margin-left: 3px;
+}
+.logo-htmlacademy:hover{
+ background: url(../img/htmlacad-logo-blue.png);
+}
+.logo-htmlacademy:active{
+  background: url(../img/htmlacad-logo-grey.png);
+}
