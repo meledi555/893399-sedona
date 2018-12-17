@@ -1,20 +1,21 @@
+/* Общие стили для тега body */
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-/*  font-weight: bold;*/
   color: #000000;
   text-transform: uppercase;
   background-color: #f0f0f0;
 }
 
-.hidden{
+/* Невидимый заголовок h1 */
+.hidden {
   display: none;
 }
 
-main {
+.page {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #fff;
   margin: 0px;
@@ -22,32 +23,77 @@ main {
   padding-bottom: 20px;
 }
 
+/* Стили для тега main */
+main {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Надпись Welcome на главной странице index */
+.inscription-welcom {
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+
+/* Иконки (бургер,дом,подарок) */
+.icon-reasons {
+  padding-top: 56px;
+}
+
+/* Все что находится в теге main-container */
 .container {
   width: 1200px;
   margin: 0px auto;
+  padding: 0px;
 }
 
+/* Все ссылки */
 a {
   text-decoration: none;
   color: #000000;
 }
 
+/* Панель меню и логотип начало */
 .main-heder {
   font-size: 14px;
   line-height: 26px;
   background-color: #ffffff;
 }
 
+.page-header-top {
+  height: 56px;
+}
+
+/* Поведение элементов в меню */
 .navigation-list {
   font-weight: bold;
 }
 
+.navigation-item: {
+  color: #000000
+}
+
+.navigation-item:hover a {
+  color: #81b3d2
+}
+
+.navigation-item:active a {
+  color: #cecece
+}
+
+.navigation-item.current a {
+  color: #766357
+}
+
+/* Панель меню и логотип конец */
+/* Картинка с background и надпись welcome начало */
 .page-header-bottom {
   background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   border: none;
+
 }
 
 .text-welcom {
@@ -69,7 +115,8 @@ h2 {
   font-size: 21px;
 }
 
-
+/* Картинка фон и надпись welcome конец*/
+/* Форма поиска начало */
 .desk h2 {
   font-size: 30px;
   line-height: 36px;
@@ -174,13 +221,13 @@ input[type=text]:focus {
 }
 
 /* Поля c цифрами */
-.field {
+.field-text {
   padding: 0px;
   display: inline-block;
 }
 
-.field input,
-.field button {
+.field-text input,
+.field-text button {
   padding: 0px 15px;
   height: 36px;
   border: none;
@@ -200,26 +247,31 @@ input[type=text]:focus {
   background-color: #5496bd
 }
 
-
-
+/* Форма поиска конец */
+/* Карточки отелей в hotels.html начало кнопки ПОДРОБНЕЕ И ЗАБРОНИРОВАТЬ*/
 .more {
-  background-color: #81b3d2
+  background-color: #81b3d2;
+  color: #ffffff
 }
 
 .more:hover {
-  background-color: #669ec0
+  background-color: #669ec0;
+  color: #ffffff
 }
 
 .more:active {
-  background-color: #5496bd
+  background-color: #5496bd;
+  color: #ffffff
 }
 
 .armor {
-  background-color: #766357
+  background-color: #766357;
+  color: #ffffff
 }
 
 .armor:hover {
-  background-color: #604e43
+  background-color: #604e43;
+  color: #ffffff
 }
 
 .armor:active {
@@ -239,47 +291,28 @@ input[type=text]:focus {
   color: #cacaca
 }
 
-.logo-htmlacademy {
-  vertical-align: middle;
-  background: url(../img/htmlacad-logo.png);
-  display: inline-block;
-  width: 115px;
-  height: 41px;
-  margin-left: 3px;
-}
+/* Карточки отелей в hotels.html конец*/
 
-.logo-htmlacademy:hover {
-  background: url(../img/htmlacad-logo-blue.png);
-}
-
-.logo-htmlacademy:active {
-  background: url(../img/htmlacad-logo-grey.png);
-}
-
-/* Base */
-
-/* Common */
-
-/* Header */
-
-.main-nav{
+/* Стили для меню навигации*/
+.main-nav {
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
 }
 
-.main-nav ul{
+.main-nav ul {
   margin: 0px;
   padding: 0px;
 }
-.main-nav ul li{
- list-style: none;
- display: inline-block;
- padding-top: 20px;
+
+.main-nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 20px;
 }
 
 .main-nav ul li a {
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .navigation-list {
@@ -288,12 +321,11 @@ input[type=text]:focus {
   justify-content: space-around;
 }
 
-/* Logo */
-
-/* Slogan */
+/* Слоган главной страницы начало */
 .slogan {
   text-align: center;
 }
+
 .slogan h2 {
   line-height: 26px;
 }
@@ -305,7 +337,8 @@ input[type=text]:focus {
   font-weight: normal;
 }
 
-/* Reasons */
+/* Слоган главной страницы конец */
+/* 5 причин начало */
 
 .reasons-item {
   width: 400px;
@@ -315,7 +348,6 @@ input[type=text]:focus {
   display: flex;
   flex-direction: row;
   text-align: center;
-
   background-image: url(../img/house.jpg);
   background-position: bottom right;
 }
@@ -354,20 +386,22 @@ input[type=text]:focus {
   background-color: #eee;
 }
 
+/* 5 причин конец */
 
-/* Desk */
+/* Форма обратной связи начало */
 
-.desk > h2{
+.desk>h2 {
   text-align: center;
 }
-.desk > p{
+
+.desk>p {
   text-align: center;
 }
 
-.search-wrapper{
+.search-wrapper {
   position: relative;
   width: 566px;
-  margin:0px auto;
+  margin: 0px auto;
 }
 
 .search {
@@ -376,29 +410,31 @@ input[type=text]:focus {
   padding: 30px 0px;
 }
 
-.search-wrapper .search-card{
- position: absolute;
- top:90px;
- left:0px;
- background-color: #FFF;
- padding: 55px;
- width: 456px;
+.search-wrapper .search-card {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  background-color: #FFF;
+  padding: 55px;
+  width: 456px;
 }
 
-.form-line{
+.form-line {
   display: flex;
   margin-bottom: 20px;
 }
 
 
-.search-button{
+.search-button {
   width: 100%;
   border: 0px;
 }
 
-/* Map */
+/* Форма обратной связи конец */
 
-.map{
+/* Карта */
+
+.map {
   height: 473px;
   width: 100%;
 
@@ -406,22 +442,22 @@ input[type=text]:focus {
 }
 
 
-/* Hotels */
+/* Отели в hotels.html */
 
-.hotels-list{
+.hotels-list {
   display: flex;
   flex-direction: column;
 }
 
-.hotels-item{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+.hotels-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-/* Footer */
+/* Футер */
 
-.main-footer{
+.main-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -431,10 +467,8 @@ justify-content: space-between;
 .social-item {
   display: inline-block;
   vertical-align: middle;
-
   width: 40px;
   height: 40px;
-
   text-align: center;
   vertical-align: middle;
 
@@ -454,3 +488,195 @@ justify-content: space-between;
   vertical-align: middle;
 }
 
+.footer-logo {
+  font-weight: 700;
+}
+
+.copyright {
+  font-weight: 700;
+}
+
+/* Логотип академии в футоре начало*/
+.logo-htmlacademy {
+  vertical-align: middle;
+  background: url(../img/htmlacad-logo.png);
+  display: inline-block;
+  width: 115px;
+  height: 41px;
+  margin-left: 3px;
+}
+
+.logo-htmlacademy:hover {
+  background: url(../img/htmlacad-logo-blue.png);
+}
+
+.logo-htmlacademy:active {
+  background: url(../img/htmlacad-logo-grey.png);
+}
+
+/* Логотип академии в футоре конец*/
+/* Футер конец */
+
+/* Форма поиска отеля начало */
+.search-card-hotels {
+  background-image: url(../img/filter-background.jpg)
+}
+
+/* Форма стоимости в сутки */
+.filter-range {
+  width: 330px;
+  margin: 50px auto;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+/* Форма поиска отеля конец */
+
+/* Форма поиска жилья в hotels.html начало */
+.filter fieldset {
+  border: none;
+}
+
+.search-card-hotels {
+  color: #ffffff
+}
+
+/* Форма поиска жилья в hotels.html конец */
+
+
+/* Сортировка */
+.sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  vertical-align: middle;
+}
+
+.found {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.sorting-list {
+  flex-grow: 1;
+}
+
+.sorting-list li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+.sorting-deriction {
+  margin-left: 20px;
+  margin-right: 20px;
+}
