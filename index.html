@@ -6,8 +6,8 @@
   <title>Добро пожаловать в Седону</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -103,7 +103,7 @@
         <p>Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="search-wrapper">
           <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-          <form class="search-card">
+          <form class="search-card search-card-show" action="catalog.html">
             <div class="form-line arrival-date">
               <label for="arriv-date">
                 Дата заезда
@@ -142,14 +142,14 @@
                   type="button" class="input-control plus">+</button>
               </div>
             </div>
-            <button class="search-button" type="submit" class="search">
+            <button class="search-button search" type="submit">
               НАЙТИ
             </button>
           </form>
         </div>
       </section>
 
-      <section class="map"></section>
+      <section class="map"> </section>
     </main>
     <footer class="main-footer">
       <p class="footer-logo">
@@ -175,11 +175,12 @@
         </ul>
       </div>
       <div class="footer-copyright">
-        <p class="copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" alt="HTMLAcademy" class="logo-htmlacademy"
-            href="#"></a></p>
+        <p class="copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTMLAcademy" class="logo-htmlacademy"></a></p>
       </div>
     </footer>
   </div>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

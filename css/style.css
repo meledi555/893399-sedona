@@ -280,6 +280,11 @@ main {
   font-size: 14px;
   line-height: 26px;
   font-weight: 900;
+  display:none;
+}
+
+.search-card-show{
+  display: block;
 }
 
 .search-button {
@@ -625,6 +630,11 @@ input[type=text]:focus {
   list-style: none;
 }
 
+.search-infr-list label,
+.search-house-list label{
+  cursor: pointer;
+}
+
 .price-controls {
   position: relative;
   height: 32px;
@@ -907,3 +917,33 @@ legend {
 .field-checkbox:checked:disabled+label:before {
   background-image: url(../img/checkbox--on-disable.png);
 }
+
+
+.deriction-up:hover img,
+.deriction-up.current:hover img {
+  content:url(../img/icon-up-dir-black.png);
+}
+
+.deriction-up:active img,
+.deriction-up.current:active img{
+  content:url(../img/icon-up-dir-blue.png);
+}
+
+.deriction-up.current img{
+  content:url(../img/icon-up-dir-blue.png);
+}
+
+.deriction-down:hover img,
+.deriction-down.current:hover img{
+  content:url(../img/icon-down-dir-black.png);
+}
+
+.deriction-down:active img,
+.deriction-down.current:active img{
+  content:url(../img/icon-down-dir-blue.png);
+}
+
+.deriction-down.current img{
+  content:url(../img/icon-down-dir-blue.png);
+}
+
