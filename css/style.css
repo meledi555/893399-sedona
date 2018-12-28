@@ -533,6 +533,10 @@ input[type=text]:focus {
   border: 0px;
 }
 
+.map{
+  background-color: #E5E3DF;
+}
+
 .map iframe{
   height: 473px;
   width: 100%;
