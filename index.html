@@ -17,18 +17,18 @@
         <nav class="main-nav">
           <ul class="navigation-list navigation-list-left">
             <li class="navigation-item"><a href="#" class="navigation-link" title="Информация" tabindex="1">Информация</a></li>
-            <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео">Фото и видео</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link" title="Фото и видео" tabindex="1">Фото и видео</a></li>
           </ul>
 
           <div class="navigation-logo">
-            <a href="index.html" class="nav-logo" title="Логотип">
+            <a href="index.html" class="nav-logo" title="Логотип" tabindex="1">
               <img class="logo-top" src="img/logo.png" alt="logo" width="140" height="72">
             </a>
           </div>
 
           <ul class="navigation-list navigation-list-right">
-            <li class="navigation-item"><a href="#" class="navigation-link" title="Карта штата">Карта штата</a></li>
-            <li class="navigation-item"><a href="catalog.html" class="navigation-link" title="Гостиницы">Гостиницы</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link" title="Карта штата" tabindex="1">Карта штата</a></li>
+            <li class="navigation-item"><a href="catalog.html" class="navigation-link" title="Гостиницы" tabindex="1">Гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -102,15 +102,15 @@
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p>Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <div class="search-wrapper">
-          <button class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <button class="search" tabindex="1">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           <form class="search-card" action="catalog.html">
             <div class="form-line arrival-date">
               <label for="arriv-date">
                 Дата заезда
               </label>
               <div class="field-date arriv-date">
-                <input type="text" id="arriv-date" value="27 апреля 2017" />
-                <a class="input-control calendar" href="#">
+                <input type="text" id="arriv-date" value="27 апреля 2017" tabindex="1"/>
+                <a class="input-control calendar" href="#" tabindex="1">
                   <img src="img/calendar.png" alt="calendar" width="21" height="22" />
                 </a>
               </div>
@@ -120,9 +120,9 @@
                 Дата выезда
               </label>
               <div class="field-date arriv-dep">
-                <input type="text" id="arriv-dep" value="7 июня 2017" />
+                <input type="text" id="arriv-dep" value="7 июня 2017" tabindex="1"/>
                 <a class="input-control calendar" href="#">
-                  <img src="img/calendar.png" alt="calendar" width="21" height="22" />
+                  <img src="img/calendar.png" alt="calendar" width="21" height="22" tabindex="1"/>
                 </a>
               </div>
             </div>
@@ -131,18 +131,18 @@
                 Взрослые
               </label>
               <div class="field-text">
-                <button type="button" class="input-control minus">-</button><input type="text" value="0" id="adul" /><button
-                  type="button" class="input-control plus">+</button>
+                <button type="button" class="input-control minus" tabindex="1">-</button><input type="text" value="0" id="adul" tabindex="1"/><button
+                  type="button" class="input-control plus" tabindex="1">+</button>
               </div>
               <label for="child">
                 Дети
               </label>
               <div class="field-text">
-                <button type="button" class="input-control minus">-</button><input type="text" value="0" id="child" /><button
-                  type="button" class="input-control plus">+</button>
+                <button type="button" class="input-control minus" tabindex="1">-</button><input type="text" value="0" id="child" tabindex="1"/><button
+                  type="button" class="input-control plus" tabindex="1">+</button>
               </div>
             </div>
-            <button class="search-button" type="submit">
+            <button class="search-button" type="submit" tabindex="1">
               НАЙТИ
             </button>
           </form>
@@ -155,29 +155,29 @@
     </main>
     <footer class="main-footer">
       <p class="footer-logo">
-        <a href="#" title="#VISITSEDONA">#VISITSEDONA</a>
+        <a href="#" title="#VISITSEDONA" tabindex="1">#VISITSEDONA</a>
       </p>
       <div class="social-networks">
         <ul class="social">
           <li class="social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="#" tabindex="1">
               <img src="img/twiter-icon.png" alt="Twiter" width="22" height="22" />
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="#" tabindex="1">
               <img src="img/fb-icon.png" alt="Facebook" width="22" height="22" />
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="#" tabindex="1">
               <img src="img/youtube-icon.png" alt="YouTube" width="22" height="22" />
             </a>
           </li>
         </ul>
       </div>
       <div class="footer-copyright">
-        <p class="copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTMLAcademy" class="logo-htmlacademy"></a></p>
+        <p class="copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTMLAcademy" class="logo-htmlacademy" tabindex="1"></a></p>
       </div>
     </footer>
   </div>
