@@ -139,7 +139,6 @@ main {
 
 .text-welcom {
   background-image: url("../img/polygon.png");
-  background-color: #FFF;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain;
