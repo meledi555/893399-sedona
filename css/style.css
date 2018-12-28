@@ -421,7 +421,6 @@ input[type=text]:focus {
 .more {
   background-color: #81b3d2;
   color: #ffffff;
-
   padding: 5px 17px;
 }
 
@@ -438,7 +437,6 @@ input[type=text]:focus {
 .armor {
   background-color: #766357;
   color: #ffffff;
-
   padding: 5px 17px;
 }
 
@@ -815,14 +813,12 @@ legend {
   justify-content: space-between;
   align-items: center;
   padding: 29px 70px 29px 70px;
-
   border: 1px solid #EEE;
 }
 
 .found {
   margin: 0px;
   margin-right: 20px;
-
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -833,11 +829,9 @@ legend {
   margin: 0px;
   margin-top: 2px;
   margin-left: 30px;
-
   font-size: 12px;
   font-weight: normal;
   line-height: 21px;
-
   margin-right: 40px;
 }
 
@@ -885,7 +879,6 @@ legend {
 }
 
 .rating-value {
-
   line-height: 10px;
   text-align: center;
   background-color: #F2F2F2;
@@ -965,7 +958,6 @@ legend {
   background-image: url("../img/checkbox--on-disable.png");
 }
 
-
 .deriction-up:hover img,
 .deriction-up.current:hover img {
   content:url("../img/icon-up-dir-black.png");
@@ -993,4 +985,3 @@ legend {
 .deriction-down.current img{
   content:url("../img/icon-down-dir-blue.png");
 }
-
