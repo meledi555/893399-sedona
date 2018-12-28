@@ -80,7 +80,7 @@ main {
 }
 
 .navigation-list:before {
-  content:"";
+  content: "";
   display: inline-block;
   min-height: 55px;
   visibility: hidden;
@@ -305,10 +305,10 @@ main {
   font-size: 14px;
   line-height: 26px;
   font-weight: 900;
-  display:none;
+  display: none;
 }
 
-.search-card-show{
+.search-card-show {
   display: block;
 }
 
@@ -417,7 +417,7 @@ input[type=text]:focus {
 .search-button {
   padding: 16px;
   background-color: #81b3d2;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .search-button:hover {
@@ -533,12 +533,12 @@ input[type=text]:focus {
   border: 0px;
 }
 
-.map{
+.map {
   height: 473px;
   background-color: #E5E3DF;
 }
 
-.map iframe{
+.map iframe {
   height: 100%;
   width: 100%;
 }
@@ -677,7 +677,7 @@ input[type=text]:focus {
 }
 
 .search-infr-list label,
-.search-house-list label{
+.search-house-list label {
   cursor: pointer;
 }
 
@@ -975,28 +975,28 @@ legend {
 
 .deriction-up:hover img,
 .deriction-up.current:hover img {
-  content:url("../img/icon-up-dir-black.png");
+  content: url("../img/icon-up-dir-black.png");
 }
 
 .deriction-up:active img,
-.deriction-up.current:active img{
-  content:url("../img/icon-up-dir-blue.png");
+.deriction-up.current:active img {
+  content: url("../img/icon-up-dir-blue.png");
 }
 
-.deriction-up.current img{
-  content:url("../img/icon-up-dir-blue.png");
+.deriction-up.current img {
+  content: url("../img/icon-up-dir-blue.png");
 }
 
 .deriction-down:hover img,
-.deriction-down.current:hover img{
-  content:url("../img/icon-down-dir-black.png");
+.deriction-down.current:hover img {
+  content: url("../img/icon-down-dir-black.png");
 }
 
 .deriction-down:active img,
-.deriction-down.current:active img{
-  content:url("../img/icon-down-dir-blue.png");
+.deriction-down.current:active img {
+  content: url("../img/icon-down-dir-blue.png");
 }
 
-.deriction-down.current img{
-  content:url("../img/icon-down-dir-blue.png");
+.deriction-down.current img {
+  content: url("../img/icon-down-dir-blue.png");
 }
