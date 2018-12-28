@@ -523,10 +523,9 @@ input[type=text]:focus {
   border: 0px;
 }
 
-.map {
+.map iframe{
   height: 473px;
   width: 100%;
-  background: url("../img/map.jpg");
 }
 
 .hotels-list {
