@@ -130,8 +130,8 @@ main {
 }
 
 .page-header-bottom {
-  background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
+  background-color: #D5E3EE;
   background-position: top -55px center;
   background-repeat: no-repeat;
   border: none;
@@ -139,6 +139,7 @@ main {
 
 .text-welcom {
   background-image: url("../img/polygon.png");
+  background-color: #FFF;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -189,6 +190,7 @@ main {
   flex-direction: row;
   text-align: center;
   background-image: url("../img/house.jpg");
+  background-color: #E2D2D1;
   background-position: bottom right;
 }
 
@@ -236,6 +238,7 @@ main {
   flex-direction: row-reverse;
   text-align: center;
   background-image: url("../img/mountain.jpg");
+  background-color: #EEB69F;
   background-position: bottom left;
 }
 
@@ -638,6 +641,7 @@ input[type=text]:focus {
 
 .search-card-hotels {
   background-image: url("../img/filter-background.jpg");
+  background-color: #6A86A1;
   background-position: top -55px center;
   color: #ffffff;
 }
