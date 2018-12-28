@@ -534,11 +534,12 @@ input[type=text]:focus {
 }
 
 .map{
-  background-color: #C4ECB4;
+  height: 473px;
+  background-color: #E5E3DF;
 }
 
 .map iframe{
-  height: 473px;
+  height: 100%;
   width: 100%;
 }
 
