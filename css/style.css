@@ -76,6 +76,14 @@ main {
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 55px;
+}
+
+.navigation-list:before {
+  content:"";
+  display: inline-block;
+  min-height: 55px;
+  visibility: hidden;
 }
 
 .navigation-list-left {
