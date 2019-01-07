@@ -337,7 +337,7 @@ main {
   color: #928a85
 }
 
-input[type=text] {
+.search-card input[type=text] {
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
@@ -345,11 +345,11 @@ input[type=text] {
   background-color: #f2f2f2;
 }
 
-input[type=text]:hover {
+.search-card input[type=text]:hover {
   background-color: #ebebeb
 }
 
-input[type=text]:focus {
+.search-card input[type=text]:focus {
   background-color: #ffffff
 }
 
@@ -726,7 +726,7 @@ input[type=text]:focus {
   margin: 0;
   color: inherit;
   font: inherit;
-  background: transparent !important;
+  background: transparent;
   border: none;
 }
 
