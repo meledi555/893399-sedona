@@ -295,7 +295,10 @@ main {
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
-  background-color: #766357
+  background-color: #766357;
+  display: inline-block;
+  vertical-align: middle;
+  border:none;
 }
 
 .search-card {
@@ -509,10 +512,10 @@ main {
 
 .search-wrapper .search-card {
   position: absolute;
-  top: 90px;
+  top: 86px;
   left: 0px;
   background-color: #FFF;
-  padding: 55px;
+  padding: 57px 55px 55px 55px;
   width: 456px;
 }
 
