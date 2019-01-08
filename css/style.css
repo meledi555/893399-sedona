@@ -157,7 +157,8 @@ main {
 .slogan h2 {
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 27px;
+  max-width: 40%;
+  margin: 0px auto 27px auto;
 }
 
 .slogan p {
